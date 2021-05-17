@@ -60,4 +60,5 @@ class TestRun(BassClass):
         delivery.del_proceed().click()
         log.info("text received from confrom pg is " + delivery.del_conformation().text )
         assert "Thank you" in delivery.del_conformation().text
+        log.info("Firstrun is over")
         time.sleep(5)
