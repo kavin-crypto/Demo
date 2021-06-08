@@ -23,7 +23,7 @@ def browser_invoke(request):
     customize.add_argument("incognito")
 
     if browser == "chrome" :
-        driver = webdriver.Chrome("/Users/kavin/Downloads/chromedriver-2",options=customize)
+        driver = webdriver.Chrome("/Users/kavin/Downloads/chromedriver-3",options=customize)
     elif browser == "safari":
         driver=webdriver.Safari()
 
@@ -65,6 +65,8 @@ def _capture_screenshot(name):
 @pytest.fixture(params=Data.home_pg_data)
 def textdata (request):
     return request.param
+
+
 
 
 

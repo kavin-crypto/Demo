@@ -13,9 +13,6 @@ class TestRun(BassClass):
         vegetable = Dataentery(self.driver)
         bag = Bag(self.driver)
 
-        #self.wait("//*[contains(text(),'Automation Practise - 1')]")
-        #vegetable = page.select_pg1()
-
         # veg_selection
         veg = vegetable.veg_name()
         log.info("selected fruits or vegetable is "+textdata["name"])
@@ -61,10 +58,4 @@ class TestRun(BassClass):
         log.info("text received from confrom pg is " + delivery.del_conformation().text )
         assert "Thank you" in delivery.del_conformation().text
         log.info("Firstrun is over")
-
-        #print("hig")
-        # print("hif")
-        # print("hif")
-        # print("hie")
-        # print("hiw")
         time.sleep(5)
